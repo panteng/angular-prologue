@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.btn {
+    display: inline-block;
+    &.large {
+        font-size: 1.2rem;
+        border-radius: 0.35rem;
+        padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    }
+    &.primary {
+        background-color: $green;
+        color: #fff;
+        transition: all 400ms;
+        &:hover {
+            background-color: #fff;
+            color: $green;
+        }
+    }
+}

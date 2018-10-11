@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.home {
+    min-height: 100%;
+    background-color: #fff;
+    .banner {
+        width: 100%;
+        height: calc(100vh - 10rem);
+        min-height: 30rem;
+        background: url('../images/banner.jpg') right center/cover no-repeat fixed;
+        position: relative;
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.2);
+        }
+        .content {
+            width: calc(100% - 4rem);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            header {
+                color: rgba(255, 255, 255, 0.75);
+                h2 {
+                    margin: 0;
+                    font-size: 3.5rem;
+                    text-align: center;
+                    strong {
+                        color: #fff;
+                    }
+                }
+                p {
+                    margin: 1rem 0 0 0;
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                    text-align: center;
+                    a {
+                        border-bottom: 1px dotted rgba(255,255,255,.5);
+                    }
+                }
+            }
+        }
+    }
+
+    .circles {
+        padding: 4rem 0 0 0;
+        .ch-react {
+            background-image: url('../images/react-logo.png');
+        }
+        .ch-vuejs {
+            background-image: url('../images/vuejs-logo.png');
+        }
+        .ch-webpack {
+            background-image: url('../images/webpack-logo.gif');
+            background-color: #222222;
+        }
+        .ch-es6 {
+            background-image: url('../images/es6-logo.png');
+        }
+        .ch-sass {
+            background-image: url('../images/sass-logo.png');
+        }
+        .ch-vscode {
+            background-image: url('../images/vscode-logo.png');
+        }
+    }
+
+    .page-footer {
+        height: 4rem;
+        background-color: $green;
+        font-size: 14px;
+        text-align: center;
+        p {
+            line-height: 4rem;
+            margin: 0;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<div class="sidebar">
+    <div class="sidebar-scroll" scrollbar="scrollbar-macosx">
+        <header class="name-card">
+            <img class="avatar" src="https://avatars2.githubusercontent.com/u/8369690?s=460&v=4">
+            <div class="text">
+            <h1 class="name">Chris Pan</h1>
+            <p class="title">Front-End Developer</p>
+        </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li ng-class="{ active: isActive('/home') }" ng-click="closeSidebar()"><a href="#!home"><i class="fa fa-home"></i><span>Intro</span></a></li>
+                <li ng-class="{ active: isActive('/works') }" ng-click="closeSidebar()"><a href="#!works"><i class="fa fa-th"></i><span>Portfolio</span></a></li>
+                <li ng-class="{ active: isActive('/about') }" ng-click="closeSidebar()"><a href="#!about"><i class="fa fa-user"></i><span>About Me</span></a></li>
+            </ul>
+        </nav>
+
+        <footer class="social-media">
+            <ul>
+                <li><a href="mailto:chrispan.pt@gmail.com" class="fa fa-envelope"></a></li>
+                <li><a href="https://github.com/panteng" target="_blank" class="fa fa-github"></a></li>
+                <li><a href="https://twitter.com/chrispan_pt" target="_blank" class="fa fa-twitter"></a></li>
+                <li><a href="https://www.instagram.com/chrispan_pt" target="_blank" class="fa fa-instagram"></a></li>
+                <li><a href="https://linkedin.com/in/chrispan-pt" target="_blank" class="fa fa-linkedin"></a></li>
+            </ul>
+        </footer>
+    </div>
+</div>
