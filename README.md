@@ -17,5 +17,8 @@ This Smoothie template is one of my old projects in my early years as a FE devel
 1. Run `gulp prod` command to start file concatenating & compressing process.
 2. Upload all files under app/dist to your server.
 
+## Credits
+Inspired by Prologue(https://html5up.net/prologue).
+
 ## License
 Creative Commons (CC) license
