@@ -7,7 +7,7 @@
         width: 100%;
         height: calc(100vh - 10rem);
         min-height: 30rem;
-        background: url('../images/banner.jpg') right center/cover no-repeat fixed;
+        background: url('../images/banner.jpg') right center/cover no-repeat;
         position: relative;
         &::before {
             content: '';
