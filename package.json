@@ -1,0 +1,44 @@
+{
+  "name": "angular-prologue",
+  "version": "1.0.0",
+  "description": "A responsive portfolio template.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panteng/angular-prologue.git"
+  },
+  "author": "Chris Pan",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^0.4.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^1.5.1",
+    "run-sequence": "^1.1.5",
+    "stream-series": "^0.1.1"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "font-awesome": "^4.5.0",
+    "imagesloaded": "^4.1.0",
+    "jquery": "^2.1.4",
+    "jquery.scrollbar": "^0.2.10",
+    "loaders.css": "^0.1.2",
+    "masonry-layout": "^4.1.0",
+    "normalize.css": "^3.0.3",
+    "smoothscroll-for-websites": "^1.4.4",
+    "typed.js": "^1.1.1"
+  }
+}

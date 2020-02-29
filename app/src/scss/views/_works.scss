@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+.works {
+    min-height: 100%;
+    background-color: #f5fafa;
+    padding: 3rem 4rem;
+    .title {
+        h2 {
+            margin: 0;
+            text-align: center;
+            color: #666;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+    }
+    .instructions {
+        margin: 3.6rem 0 0 0;
+        text-align: center;
+        color: #888;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        a {
+            border-bottom: dotted 1px #888;
+            transition: all 400ms;
+            &:hover {
+                color: $green;
+                border-color: transparent;
+            }
+        }
+    }
+    .projects {
+        margin-top: 2rem;
+        overflow: hidden;
+        .gutter-sizer {
+            width: 5%;
+        }
+        .project {
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            a {
+                display: block;
+            }
+            img {
+                display: block;
+                visibility: hidden;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: relative;
+                top: 50px;
+                transition: all 1000ms;
+                &.show {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 0;
+                }
+            }
+            .intro {
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: all 800ms;
+                h2 {
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 3px;
+                    background-color: $pink;
+                    color: #fff;
+                    font-size: 1.2rem;
+                }
+                p {
+                    margin: 1rem 0 0 0;
+                    color: #fff;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+                .intro {
+                    opacity: 1;
+                    background-color: rgba(0,0,0,.8);
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1280px) {
+    .works {
+        .projects {
+            .project {
+                width: 47%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .works {
+        padding: 2rem 1rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .works {
+        .projects {
+            .project {
+                width: 100%;
+            }
+        }
+    }
+}

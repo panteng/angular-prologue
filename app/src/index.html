@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="homepage">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <meta name="author" content="chrispan.pt@gmail.com">
+
+    <title>Angular Prologue</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body>
+<!--[if lte IE 9]>
+<div class="browsehappy">
+    <div class="center">
+        <img src="images/avatar.png" alt="avatar">
+        <p>Hmm...it looks like you are using a very old IE browser.</p>
+        <p>Please consider <a href="http://browsehappy.com/" target="_blank">upgrading your browser</a> and come back later.</p>
+    </div>
+</div>
+<![endif]-->
+
+<div class="loader">
+    <div class="loader-inner ball-clip-rotate-multiple">
+        <div></div>
+        <div></div>
+    </div>
+    <p>Loading...</p>
+</div>
+
+<sidebar ng-class="{ expanded: isExpanded }"></sidebar>
+<sidebar-toggle></sidebar-toggle>
+
+<main class="main-content">
+    <div class="view" ng-view></div>
+</main>
+
+<fork></fork>
+
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>

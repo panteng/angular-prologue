@@ -1,0 +1,25 @@
+.sidebar-toggle {
+    display: none;
+    background-color: $darkGrey;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    z-index: 999;
+    transition: all 400ms;
+}
+
+.sidebar.expanded ~ .sidebar-toggle {
+    display: block;
+    transform: translate3d(19rem, 0, 0);
+}
+
+@media all and (max-width: 1024px) {
+    .sidebar-toggle {
+        display: block;
+    }
+}
