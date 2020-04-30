@@ -33,7 +33,7 @@
     "angular-route": "^1.4.8",
     "font-awesome": "^4.5.0",
     "imagesloaded": "^4.1.0",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.0",
     "jquery.scrollbar": "^0.2.10",
     "loaders.css": "^0.1.2",
     "masonry-layout": "^4.1.0",
